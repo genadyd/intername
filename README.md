@@ -1,5 +1,5 @@
 # intername project
-##description:
+## description:
 <p>
 1. In the project I use Composer
 for classes autoload and routing 
@@ -12,7 +12,7 @@ for classes autoload and routing
 
 >***checkIfUserExistsById*** - *check if user exists by user id*
 
-##structure:
+## structure:
 
 ###controllers:
 
