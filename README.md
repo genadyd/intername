@@ -28,7 +28,11 @@ for classes autoload and routing
 ***Json Controller***
 
 >display data in json format
-> use *json_show.php*
+> use template *json_show.php*
 
- 
+***FormHandlerController***
+
+> validate and save user and post
+
+ ### Models:
 
