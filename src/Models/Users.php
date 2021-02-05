@@ -65,7 +65,7 @@ class Users
      * @param checked user_id  int $id
      * @return bool true if user, else false
     * */
-   public static function checkIfUserExistsById(int $id){
+   public static function checkIfUserExistsById(int $id):bool{
        $query = "SELECT id from users WHERE id = :ID ";
        $st = self::$db->prepare($query);
        $st->bindParam(':ID',$id,\PDO::PARAM_INT);
