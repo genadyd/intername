@@ -13,7 +13,9 @@ for classes autoload and routing
 >***checkIfUserExistsById*** - *check if user exists by user id*
 
 ##structure:
+
 ###controllers:
+
 ***Home Controller***
 
 >display form controller
