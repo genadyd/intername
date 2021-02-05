@@ -11,5 +11,22 @@ for classes autoload and routing
     because I use it in static function:
 
 >***checkIfUserExistsById*** - *check if user exists by user id*
+
+##structure:
+###controllers:
+***Home Controller***
+
+>display form controller
+> use template *form.php*
+
+***FillDBController***
+
+>fetch api data and insert it into DB
+
+***Json Controller***
+
+>display data in json format
+> use *json_show.php*
+
  
 
