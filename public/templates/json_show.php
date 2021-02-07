@@ -11,7 +11,7 @@
 </head>
 <body >
 <div id="heading">Posts Json</div>
-<div id="json_container" style="width: 100vw;">
+<div id="json_container">
               <?= /** @var TYPE_NAME $json */
               $json
               ?>
