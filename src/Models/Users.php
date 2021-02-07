@@ -38,7 +38,7 @@ class Users
 
        $name = htmlspecialchars($user_params['name']);
        $email = htmlspecialchars($user_params['email']);
-       $query = "INSERT INTO users ( name, email) VALUES (:NAME, :EMAIL) ";
+       $query = "INSERT INTO users ( name, email, created_at) VALUES (:NAME, :EMAIL, CURRENT_TIMESTAMP ) ";
        $st = self::$db->prepare($query);
        $st->bindParam(":NAME",$name, \PDO::PARAM_STR);
        $st->bindParam(":EMAIL",$email, \PDO::PARAM_STR);

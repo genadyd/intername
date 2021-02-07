@@ -24,8 +24,10 @@ class JsonController
         $res = $this->post_model->searchById($post_id);
         if(is_array($res)){
             $res =  $this->decode($res);
+            $json = '<pre>'.json_encode($res, JSON_PRETTY_PRINT).'</pre>';
+        }else{
+            $json = $json = '<div class="no_res">This query returned zero results 	&#128515;</div>';;
         }
-        $json = json_encode($res, JSON_PRETTY_PRINT);
         ob_start();
         require_once 'public/templates/json_show.php';
         echo ob_get_clean();
@@ -34,8 +36,10 @@ class JsonController
         $res = $this->post_model->searchByUserId($user_id);
         if(is_array($res)){
             $res =  $this->decode($res);
+            $json = '<pre>'.json_encode($res, JSON_PRETTY_PRINT).'</pre>';
+        }else{
+            $json = '<div class="no_res">This query returned zero results 	&#128515;</div>';
         }
-        $json = json_encode($res, JSON_PRETTY_PRINT);
         ob_start();
         require_once 'public/templates/json_show.php';
         echo ob_get_clean();

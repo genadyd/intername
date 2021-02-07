@@ -35,7 +35,7 @@ class Posts
 
         /* regular query*/
 
-        $query = "INSERT INTO posts ( user_id, title, body ) VALUES (:USER, :TITLE, :BODY)";
+        $query = "INSERT INTO posts ( user_id, title, body, created_at ) VALUES (:USER, :TITLE, :BODY, CURRENT_TIMESTAMP )";
         $st = $this->db->prepare($query);
         $st->bindParam(":USER", $post_params['user_id'], \PDO::PARAM_INT);
         $st->bindParam(":TITLE", $title, \PDO::PARAM_STR);
